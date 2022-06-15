@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="currencyItem">
+    <select (change)="setSelect1($event)">
+      <option value="UAH" selected>Гривня</option>
+      <option value="USD">Доллар</option>
+      <option value="EUR">Євро</option>
+    </select>
+    <input type="number" [(ngModel)]="firstValue" (ngModelChange)="changeFirst()">
+  </div>
+  <div>
+  =
+  </div>
+  <div class="currencyItem">
+    <select (change)="setSelect2($event)" >
+      <option value="UAH" selected>Гривня</option>
+      <option value="USD">Доллар</option>
+      <option value="EUR">Євро</option>
+    </select>
+    <input type="number" [(ngModel)]="secondValue" (ngModelChange)="changeSecond()">
+  </div>
+</div>
